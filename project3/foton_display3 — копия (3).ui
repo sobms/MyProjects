@@ -1,0 +1,1037 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>871</width>
+    <height>765</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="0" column="0">
+     <widget class="QTabWidget" name="tabWidget">
+      <property name="toolTip">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(255, 203, 2);
+gridline-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgba(255, 178, 102, 255), stop:0.55 rgba(235, 148, 61, 255), stop:0.98 rgba(0, 0, 0, 255), stop:1 rgba(0, 0, 0, 0));</string>
+      </property>
+      <property name="currentIndex">
+       <number>0</number>
+      </property>
+      <widget class="QWidget" name="tab3">
+       <attribute name="title">
+        <string>Рассчёт</string>
+       </attribute>
+       <layout class="QVBoxLayout" name="verticalLayout_2">
+        <item>
+         <widget class="QSplitter" name="splitter_2">
+          <property name="orientation">
+           <enum>Qt::Vertical</enum>
+          </property>
+          <widget class="QSplitter" name="splitter">
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+           <widget class="QTableWidget" name="tableWidget">
+            <property name="styleSheet">
+             <string notr="true">color: rgb(255, 203, 2);
+background-color: rgb(53, 53, 53);
+font: italic 10pt &quot;Segoe UI&quot;;</string>
+            </property>
+            <property name="gridStyle">
+             <enum>Qt::SolidLine</enum>
+            </property>
+            <column>
+             <property name="text">
+              <string>Год</string>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>Месяц</string>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>День</string>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>Час</string>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>Энергия_излуч.</string>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>Нагрузка</string>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>+dE</string>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>-dE</string>
+             </property>
+            </column>
+           </widget>
+           <widget class="QGroupBox" name="groupBox">
+            <property name="styleSheet">
+             <string notr="true">background-color: rgb(53, 53, 53);</string>
+            </property>
+            <layout class="QVBoxLayout" name="verticalLayout_3">
+             <item>
+              <widget class="QFrame" name="frame">
+               <property name="styleSheet">
+                <string notr="true">border-color: rgb(85, 255, 0);</string>
+               </property>
+               <layout class="QFormLayout" name="formLayout">
+                <item row="3" column="0">
+                 <widget class="QLabel" name="label_4">
+                  <property name="styleSheet">
+                   <string notr="true">color: rgb(255, 203, 2);</string>
+                  </property>
+                  <property name="text">
+                   <string>А1</string>
+                  </property>
+                 </widget>
+                </item>
+                <item row="3" column="1">
+                 <widget class="QLineEdit" name="lineEdit_4">
+                  <property name="styleSheet">
+                   <string notr="true">color: rgb(255, 203, 2);</string>
+                  </property>
+                  <property name="text">
+                   <string>0.0010332</string>
+                  </property>
+                 </widget>
+                </item>
+                <item row="4" column="0">
+                 <widget class="QLabel" name="label_5">
+                  <property name="styleSheet">
+                   <string notr="true">color: rgb(255, 203, 2);</string>
+                  </property>
+                  <property name="text">
+                   <string>А2</string>
+                  </property>
+                 </widget>
+                </item>
+                <item row="4" column="1">
+                 <widget class="QLineEdit" name="lineEdit_5">
+                  <property name="styleSheet">
+                   <string notr="true">color: rgb(255, 203, 2);</string>
+                  </property>
+                  <property name="text">
+                   <string>0.00087737</string>
+                  </property>
+                 </widget>
+                </item>
+                <item row="5" column="0">
+                 <widget class="QLabel" name="label_6">
+                  <property name="styleSheet">
+                   <string notr="true">color: rgb(255, 203, 2);</string>
+                  </property>
+                  <property name="text">
+                   <string>В1</string>
+                  </property>
+                 </widget>
+                </item>
+                <item row="5" column="1">
+                 <widget class="QLineEdit" name="lineEdit_6">
+                  <property name="styleSheet">
+                   <string notr="true">color: rgb(255, 203, 2);</string>
+                  </property>
+                  <property name="text">
+                   <string>0.73</string>
+                  </property>
+                 </widget>
+                </item>
+                <item row="6" column="0">
+                 <widget class="QLabel" name="label_7">
+                  <property name="styleSheet">
+                   <string notr="true">color: rgb(255, 203, 2);</string>
+                  </property>
+                  <property name="text">
+                   <string>В2</string>
+                  </property>
+                 </widget>
+                </item>
+                <item row="6" column="1">
+                 <widget class="QLineEdit" name="lineEdit_7">
+                  <property name="styleSheet">
+                   <string notr="true">color: rgb(255, 203, 2);</string>
+                  </property>
+                  <property name="text">
+                   <string>0.5691056</string>
+                  </property>
+                 </widget>
+                </item>
+                <item row="2" column="1">
+                 <widget class="QLineEdit" name="lineEdit">
+                  <property name="styleSheet">
+                   <string notr="true">color: rgb(255, 203, 2);</string>
+                  </property>
+                  <property name="text">
+                   <string>200</string>
+                  </property>
+                 </widget>
+                </item>
+                <item row="2" column="0">
+                 <widget class="QLabel" name="label">
+                  <property name="styleSheet">
+                   <string notr="true">color: rgb(255, 203, 2);</string>
+                  </property>
+                  <property name="text">
+                   <string>Параметр солнечного модуля, Вт</string>
+                  </property>
+                 </widget>
+                </item>
+                <item row="1" column="0">
+                 <widget class="QLabel" name="label_2">
+                  <property name="styleSheet">
+                   <string notr="true">color: rgb(255, 203, 2);</string>
+                  </property>
+                  <property name="text">
+                   <string>КПД инвертора</string>
+                  </property>
+                 </widget>
+                </item>
+                <item row="1" column="1">
+                 <widget class="QLineEdit" name="lineEdit_2">
+                  <property name="styleSheet">
+                   <string notr="true">color: rgb(255, 203, 2);</string>
+                  </property>
+                  <property name="text">
+                   <string>1</string>
+                  </property>
+                 </widget>
+                </item>
+                <item row="0" column="0">
+                 <widget class="QLabel" name="label_3">
+                  <property name="styleSheet">
+                   <string notr="true">color: rgb(255, 203, 2);</string>
+                  </property>
+                  <property name="text">
+                   <string>Максимальное число панелей, шт</string>
+                  </property>
+                 </widget>
+                </item>
+                <item row="0" column="1">
+                 <widget class="QLineEdit" name="lineEdit_3">
+                  <property name="styleSheet">
+                   <string notr="true">color: rgb(255, 203, 2);</string>
+                  </property>
+                  <property name="text">
+                   <string>6000</string>
+                  </property>
+                 </widget>
+                </item>
+               </layout>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLabel" name="label_8">
+               <property name="styleSheet">
+                <string notr="true">color: rgb(255, 203, 02);
+font: 75 15pt &quot;MS Shell Dlg 2&quot;;</string>
+               </property>
+               <property name="text">
+                <string>Результаты вычислений</string>
+               </property>
+               <property name="alignment">
+                <set>Qt::AlignCenter</set>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QFrame" name="frame">
+               <layout class="QGridLayout" name="gridLayout_2">
+                <item row="0" column="1">
+                 <widget class="QLabel" name="label_31">
+                  <property name="styleSheet">
+                   <string notr="true">color: rgb(255, 203, 2);
+font: italic 10pt &quot;MS Sans Serif&quot;;</string>
+                  </property>
+                  <property name="text">
+                   <string/>
+                  </property>
+                 </widget>
+                </item>
+                <item row="0" column="0">
+                 <widget class="QLabel" name="label_9">
+                  <property name="styleSheet">
+                   <string notr="true">color: rgb(255, 203, 2);</string>
+                  </property>
+                  <property name="text">
+                   <string>P_max(кВт*ч) =</string>
+                  </property>
+                 </widget>
+                </item>
+                <item row="1" column="0">
+                 <widget class="QLabel" name="label_10">
+                  <property name="styleSheet">
+                   <string notr="true">color: rgb(255, 203, 2);</string>
+                  </property>
+                  <property name="text">
+                   <string>Оптимальное кол-во панелей, шт</string>
+                  </property>
+                 </widget>
+                </item>
+                <item row="1" column="1">
+                 <widget class="QLabel" name="label_32">
+                  <property name="styleSheet">
+                   <string notr="true">color: rgb(255, 203, 2);
+font: italic 10pt &quot;MS Sans Serif&quot;;</string>
+                  </property>
+                  <property name="text">
+                   <string/>
+                  </property>
+                 </widget>
+                </item>
+               </layout>
+              </widget>
+             </item>
+             <item>
+              <widget class="QPushButton" name="pushButton_6">
+               <property name="enabled">
+                <bool>true</bool>
+               </property>
+               <property name="mouseTracking">
+                <bool>false</bool>
+               </property>
+               <property name="layoutDirection">
+                <enum>Qt::LeftToRight</enum>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">font: 75 17pt &quot;Sitka Text&quot;;
+border:3px solid rgb(0,0,0);
+border-radius: 18px;
+border-color:#6C6B6A;
+color: rgb(255, 203, 2);</string>
+               </property>
+               <property name="text">
+                <string>Рассчитать</string>
+               </property>
+               <property name="iconSize">
+                <size>
+                 <width>200</width>
+                 <height>200</height>
+                </size>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+          </widget>
+          <widget class="QPushButton" name="pushButton">
+           <property name="styleSheet">
+            <string notr="true">font: 75 17pt &quot;Sitka Text&quot;;
+border:3px solid rgb(0,0,0);
+border-radius: 18px;
+border-color:#6C6B6A;
+color: rgb(255, 203, 2);
+background-color: rgb(53, 53, 53);</string>
+           </property>
+           <property name="text">
+            <string>Загрузить данные</string>
+           </property>
+           <property name="autoDefault">
+            <bool>false</bool>
+           </property>
+          </widget>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="tab">
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(255, 203, 2);</string>
+       </property>
+       <attribute name="title">
+        <string>График</string>
+       </attribute>
+       <layout class="QHBoxLayout" name="horizontalLayout">
+        <item>
+         <widget class="QGraphicsView" name="graphicsView"/>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="tab_2">
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(53, 53, 53);</string>
+       </property>
+       <attribute name="title">
+        <string>Подбор оборудования</string>
+       </attribute>
+       <layout class="QVBoxLayout" name="verticalLayout">
+        <item>
+         <widget class="QSplitter" name="splitter_3">
+          <property name="styleSheet">
+           <string notr="true">background-color: rgb(53, 53, 53);</string>
+          </property>
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+          <widget class="QWidget" name="layoutWidget">
+           <layout class="QVBoxLayout" name="verticalLayout_9">
+            <item>
+             <widget class="QGraphicsView" name="graphicsView_2">
+              <property name="styleSheet">
+               <string notr="true">border:5px solid rgb(0,0,0);
+border-color:#6C6B6A;</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QGraphicsView" name="graphicsView_3">
+              <property name="styleSheet">
+               <string notr="true">border:5px solid rgb(0,0,0);
+border-color:#6C6B6A;</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QGraphicsView" name="graphicsView_4">
+              <property name="styleSheet">
+               <string notr="true">border:5px solid rgb(0,0,0);
+border-color:#6C6B6A;</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+          <widget class="QWidget" name="layoutWidget">
+           <layout class="QVBoxLayout" name="verticalLayout_8">
+            <item>
+             <widget class="QWidget" name="widget" native="true">
+              <property name="styleSheet">
+               <string notr="true">background-color: rgb(255, 203, 2);
+</string>
+              </property>
+              <layout class="QVBoxLayout" name="verticalLayout_4">
+               <item>
+                <widget class="QWidget" name="formWidget" native="true">
+                 <property name="styleSheet">
+                  <string notr="true">background-color: rgb(255,203, 2);</string>
+                 </property>
+                 <layout class="QFormLayout" name="formLayout_2">
+                  <item row="0" column="0">
+                   <widget class="QLabel" name="label_12">
+                    <property name="styleSheet">
+                     <string notr="true">background-color: rgb(255,203, 2);
+font: 75 12pt &quot;MS Shell Dlg 2&quot;;</string>
+                    </property>
+                    <property name="text">
+                     <string>Электролизные установки (ЭУ)</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="1" column="0">
+                   <widget class="QLabel" name="label_13">
+                    <property name="styleSheet">
+                     <string notr="true">background-color: rgb(255,203, 2);</string>
+                    </property>
+                    <property name="text">
+                     <string>Nmax ЭУ, кВт =</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="1" column="1">
+                   <widget class="QLabel" name="label_11">
+                    <property name="styleSheet">
+                     <string notr="true">background-color: rgb(255,203, 2);
+</string>
+                    </property>
+                    <property name="text">
+                     <string/>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="2" column="0">
+                   <widget class="QLabel" name="label_14">
+                    <property name="styleSheet">
+                     <string notr="true">background-color: rgb(255,203, 2);</string>
+                    </property>
+                    <property name="text">
+                     <string>Av, кВт*ч/нм3 =</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="2" column="1">
+                   <widget class="QLineEdit" name="lineEdit_8">
+                    <property name="styleSheet">
+                     <string notr="true">background-color: rgb(255,203, 2);</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="3" column="0">
+                   <widget class="QLabel" name="label_15">
+                    <property name="styleSheet">
+                     <string notr="true">background-color: rgb(255,203, 2);</string>
+                    </property>
+                    <property name="text">
+                     <string>V_h2, нм3/ч =</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="3" column="1">
+                   <widget class="QLabel" name="label_33">
+                    <property name="styleSheet">
+                     <string notr="true">background-color: rgb(255,203, 2);</string>
+                    </property>
+                    <property name="text">
+                     <string/>
+                    </property>
+                   </widget>
+                  </item>
+                 </layout>
+                </widget>
+               </item>
+               <item>
+                <widget class="QPushButton" name="pushButton_2">
+                 <property name="styleSheet">
+                  <string notr="true">background-color: rgb(255, 203, 2);
+font: 75 13pt &quot;Sitka Text&quot;;
+border:3px solid rgb(0,0,0);
+border-radius: 15px;
+border-color:#6C6B6A;</string>
+                 </property>
+                 <property name="text">
+                  <string>Рассчитать V</string>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </widget>
+            </item>
+            <item>
+             <widget class="QWidget" name="widget" native="true">
+              <property name="styleSheet">
+               <string notr="true">background-color: rgb(255, 203, 2);
+</string>
+              </property>
+              <layout class="QVBoxLayout" name="verticalLayout_5">
+               <item>
+                <widget class="QWidget" name="formWidget" native="true">
+                 <property name="styleSheet">
+                  <string notr="true">background-color: rgb(255, 203, 2);</string>
+                 </property>
+                 <layout class="QFormLayout" name="formLayout_3">
+                  <item row="1" column="0">
+                   <widget class="QLabel" name="label_17">
+                    <property name="styleSheet">
+                     <string notr="true">background-color: rgb(255, 203, 2);</string>
+                    </property>
+                    <property name="text">
+                     <string>V_h2_ЭУ, нм3/ч =</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="1" column="1">
+                   <widget class="QLineEdit" name="lineEdit_9">
+                    <property name="styleSheet">
+                     <string notr="true">background-color: rgb(255, 203, 2);</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="2" column="0">
+                   <widget class="QLabel" name="label_18">
+                    <property name="styleSheet">
+                     <string notr="true">background-color: rgb(255, 203, 2);</string>
+                    </property>
+                    <property name="text">
+                     <string>К ЭУ, шт =</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="2" column="1">
+                   <widget class="QLabel" name="label_34">
+                    <property name="styleSheet">
+                     <string notr="true">background-color: rgb(255, 203, 2);</string>
+                    </property>
+                    <property name="text">
+                     <string/>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="0" column="0">
+                   <widget class="QLabel" name="label_16">
+                    <property name="styleSheet">
+                     <string notr="true">background-color: rgb(255,203, 2);
+font: 75 12pt &quot;MS Shell Dlg 2&quot;;</string>
+                    </property>
+                    <property name="text">
+                     <string>Подбор электролизера с произв.:</string>
+                    </property>
+                   </widget>
+                  </item>
+                 </layout>
+                </widget>
+               </item>
+               <item>
+                <widget class="QPushButton" name="pushButton_3">
+                 <property name="styleSheet">
+                  <string notr="true">background-color: rgb(255, 203, 2);
+font: 75 13pt &quot;Sitka Text&quot;;
+border:3px solid rgb(0,0,0);
+border-radius: 15px;
+border-color:#6C6B6A;</string>
+                 </property>
+                 <property name="text">
+                  <string>Рассчитать К ЭУ</string>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </widget>
+            </item>
+            <item>
+             <widget class="QWidget" name="verticalWidget" native="true">
+              <property name="styleSheet">
+               <string notr="true">background-color: rgb(255, 203, 2);
+</string>
+              </property>
+              <layout class="QVBoxLayout" name="verticalLayout_6">
+               <item>
+                <widget class="QLabel" name="label_19">
+                 <property name="styleSheet">
+                  <string notr="true">background-color: rgb(255,203, 2);
+font: 75 12pt &quot;MS Shell Dlg 2&quot;;</string>
+                 </property>
+                 <property name="text">
+                  <string>Топливные элементы (ТЭ)</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <layout class="QFormLayout" name="formLayout_4">
+                 <item row="1" column="0">
+                  <widget class="QLabel" name="label_20">
+                   <property name="styleSheet">
+                    <string notr="true">background-color: rgb(255,203, 2);
+</string>
+                   </property>
+                   <property name="text">
+                    <string>N1 ТЭ, кВт =</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="1" column="1">
+                  <widget class="QLabel" name="label_35">
+                   <property name="styleSheet">
+                    <string notr="true">background-color: rgb(255,203, 2);
+</string>
+                   </property>
+                   <property name="text">
+                    <string/>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="2" column="0">
+                  <widget class="QLabel" name="label_21">
+                   <property name="styleSheet">
+                    <string notr="true">background-color: rgb(255,203, 2);
+</string>
+                   </property>
+                   <property name="text">
+                    <string>Nном ТЭ, кВт =</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="2" column="1">
+                  <widget class="QLineEdit" name="lineEdit_10">
+                   <property name="styleSheet">
+                    <string notr="true">background-color: rgb(255,203, 2);
+</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="3" column="0">
+                  <widget class="QLabel" name="label_22">
+                   <property name="styleSheet">
+                    <string notr="true">background-color: rgb(255,203, 2);
+</string>
+                   </property>
+                   <property name="text">
+                    <string>К ТЭ, шт =</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="3" column="1">
+                  <widget class="QLabel" name="label_36">
+                   <property name="styleSheet">
+                    <string notr="true">background-color: rgb(255,203, 2);
+</string>
+                   </property>
+                   <property name="text">
+                    <string/>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </item>
+               <item>
+                <widget class="QPushButton" name="pushButton_4">
+                 <property name="styleSheet">
+                  <string notr="true">background-color: rgb(255, 203, 2);
+font: 75 13pt &quot;Sitka Text&quot;;
+border:3px solid rgb(0,0,0);
+border-radius: 15px;
+border-color:#6C6B6A;</string>
+                 </property>
+                 <property name="text">
+                  <string>Рассчитать К ТЭ</string>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </widget>
+            </item>
+            <item>
+             <widget class="QWidget" name="verticalWidget" native="true">
+              <property name="styleSheet">
+               <string notr="true">background-color: rgb(255, 203, 2);
+
+border-color: rgb(85, 85, 127);
+</string>
+              </property>
+              <layout class="QVBoxLayout" name="verticalLayout_7">
+               <item>
+                <widget class="QLabel" name="label_23">
+                 <property name="styleSheet">
+                  <string notr="true">background-color: rgb(255,203, 2);
+font: 75 12pt &quot;MS Shell Dlg 2&quot;;</string>
+                 </property>
+                 <property name="text">
+                  <string>Количество баллонов</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <layout class="QFormLayout" name="formLayout_5">
+                 <item row="0" column="0">
+                  <widget class="QLabel" name="label_24">
+                   <property name="styleSheet">
+                    <string notr="true">background-color: rgb(255,203, 2);</string>
+                   </property>
+                   <property name="text">
+                    <string>Давление H2 в баллоне, бар =</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="0" column="1">
+                  <widget class="QLineEdit" name="lineEdit_11">
+                   <property name="styleSheet">
+                    <string notr="true">background-color: rgb(255,203, 2);</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="1" column="0">
+                  <widget class="QLabel" name="label_25">
+                   <property name="styleSheet">
+                    <string notr="true">background-color: rgb(255,203, 2);</string>
+                   </property>
+                   <property name="text">
+                    <string>Объём баллона Vб Н2, м3 =</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="1" column="1">
+                  <widget class="QLineEdit" name="lineEdit_12">
+                   <property name="styleSheet">
+                    <string notr="true">background-color: rgb(255,203, 2);</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="2" column="0">
+                  <widget class="QLabel" name="label_26">
+                   <property name="styleSheet">
+                    <string notr="true">background-color: rgb(255,203, 2);</string>
+                   </property>
+                   <property name="text">
+                    <string>E max H2,кВт =</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="2" column="1">
+                  <widget class="QLabel" name="label_37">
+                   <property name="styleSheet">
+                    <string notr="true">background-color: rgb(255,203, 2);</string>
+                   </property>
+                   <property name="text">
+                    <string/>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </item>
+               <item>
+                <widget class="QLabel" name="label_27">
+                 <property name="styleSheet">
+                  <string notr="true">background-color: rgb(255,203, 2);</string>
+                 </property>
+                 <property name="text">
+                  <string>Максимальная масса H2 в системе хранения, кг</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <layout class="QFormLayout" name="formLayout_6">
+                 <item row="0" column="0">
+                  <widget class="QLabel" name="label_28">
+                   <property name="styleSheet">
+                    <string notr="true">background-color: rgb(255,203, 2);</string>
+                   </property>
+                   <property name="text">
+                    <string>MH2, кг =</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="0" column="1">
+                  <widget class="QLabel" name="label_38">
+                   <property name="styleSheet">
+                    <string notr="true">background-color: rgb(255,203, 2);</string>
+                   </property>
+                   <property name="text">
+                    <string/>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </item>
+               <item>
+                <widget class="QLabel" name="label_29">
+                 <property name="styleSheet">
+                  <string notr="true">background-color: rgb(255,203, 2);</string>
+                 </property>
+                 <property name="text">
+                  <string>Количество баллонов в системе хранения</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <layout class="QFormLayout" name="formLayout_7">
+                 <item row="0" column="0">
+                  <widget class="QLabel" name="label_30">
+                   <property name="styleSheet">
+                    <string notr="true">background-color: rgb(255,203, 2);</string>
+                   </property>
+                   <property name="text">
+                    <string>Кб, шт =</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="0" column="1">
+                  <widget class="QLabel" name="label_39">
+                   <property name="styleSheet">
+                    <string notr="true">background-color: rgb(255,203, 2);</string>
+                   </property>
+                   <property name="text">
+                    <string/>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </item>
+               <item>
+                <widget class="QPushButton" name="pushButton_5">
+                 <property name="styleSheet">
+                  <string notr="true">background-color: rgb(255, 203, 2);
+font: 75 13pt &quot;Sitka Text&quot;;
+border:3px solid rgb(0,0,0);
+border-radius: 15px;
+border-color:#6C6B6A;</string>
+                 </property>
+                 <property name="text">
+                  <string>Рассчитать Кб и МH2</string>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="tab_3">
+       <attribute name="title">
+        <string>Котел/плита</string>
+       </attribute>
+       <layout class="QVBoxLayout" name="verticalLayout_12">
+        <item>
+         <widget class="QSplitter" name="splitter_4">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+          <widget class="QWidget" name="verticalWidget" native="true">
+           <property name="styleSheet">
+            <string notr="true">background-color: rgb(53,53, 53);</string>
+           </property>
+           <layout class="QVBoxLayout" name="verticalLayout_11">
+            <item>
+             <widget class="QLabel" name="label_43">
+              <property name="styleSheet">
+               <string notr="true">background-color: rgb(53,53, 53);
+color: rgb(255, 203, 2);
+font: 75 12pt &quot;MS Shell Dlg 2&quot;;</string>
+              </property>
+              <property name="text">
+               <string>Котёл</string>
+              </property>
+              <property name="alignment">
+               <set>Qt::AlignCenter</set>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <layout class="QFormLayout" name="formLayout_9">
+              <item row="0" column="0">
+               <widget class="QLabel" name="label_44">
+                <property name="styleSheet">
+                 <string notr="true">background-color: rgb(53,53, 53);
+color: rgb(255, 203, 2);
+font: 10pt &quot;MS Shell Dlg 2&quot;;</string>
+                </property>
+                <property name="text">
+                 <string>Площадь отапливаемой поверхности, м2 =</string>
+                </property>
+               </widget>
+              </item>
+              <item row="0" column="1">
+               <widget class="QLineEdit" name="lineEdit_15">
+                <property name="styleSheet">
+                 <string notr="true">background-color: rgb(53,53, 53);
+color: rgb(255, 203, 2);</string>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </item>
+            <item>
+             <widget class="QPushButton" name="pushButton_8">
+              <property name="styleSheet">
+               <string notr="true">background-color: rgb(255, 203, 2);
+font: 75 13pt &quot;Sitka Text&quot;;
+border:3px solid rgb(0,0,0);
+border-radius: 15px;
+border-color:#6C6B6A;</string>
+              </property>
+              <property name="text">
+               <string>Рассчитать</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+          <widget class="QWidget" name="verticalWidget" native="true">
+           <property name="styleSheet">
+            <string notr="true">background-color: rgb(53,53, 53);</string>
+           </property>
+           <layout class="QVBoxLayout" name="verticalLayout_10">
+            <item>
+             <widget class="QLabel" name="label_42">
+              <property name="styleSheet">
+               <string notr="true">background-color: rgb(53,53, 53);
+font: 75 12pt &quot;MS Shell Dlg 2&quot;;
+color: rgb(255,203, 2);</string>
+              </property>
+              <property name="text">
+               <string>Плита</string>
+              </property>
+              <property name="alignment">
+               <set>Qt::AlignCenter</set>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <layout class="QFormLayout" name="formLayout_8">
+              <item row="0" column="0">
+               <widget class="QLabel" name="label_40">
+                <property name="styleSheet">
+                 <string notr="true">font: 10pt &quot;MS Shell Dlg 2&quot;;
+background-color: rgb(53,53, 53);
+color: rgb(255, 203, 2);</string>
+                </property>
+                <property name="text">
+                 <string>Среднее время использ. плиты, ч =</string>
+                </property>
+               </widget>
+              </item>
+              <item row="0" column="1">
+               <widget class="QLineEdit" name="lineEdit_13">
+                <property name="styleSheet">
+                 <string notr="true">background-color: rgb(53,53, 53);
+color: rgb(255, 203, 2);</string>
+                </property>
+               </widget>
+              </item>
+              <item row="1" column="0">
+               <widget class="QLabel" name="label_41">
+                <property name="styleSheet">
+                 <string notr="true">font: 10pt &quot;MS Shell Dlg 2&quot;;
+background-color: rgb(53,53, 53);
+color: rgb(255, 203, 2);</string>
+                </property>
+                <property name="text">
+                 <string>Среднее число, использ. конфорок =</string>
+                </property>
+               </widget>
+              </item>
+              <item row="1" column="1">
+               <widget class="QLineEdit" name="lineEdit_14">
+                <property name="styleSheet">
+                 <string notr="true">background-color: rgb(53,53, 53);
+color: rgb(255, 203, 2);</string>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </item>
+            <item>
+             <widget class="QPushButton" name="pushButton_7">
+              <property name="styleSheet">
+               <string notr="true">background-color: rgb(255, 203, 2);
+font: 75 13pt &quot;Sitka Text&quot;;
+border:3px solid rgb(0,0,0);
+border-radius: 15px;
+border-color:#6C6B6A;</string>
+              </property>
+              <property name="text">
+               <string>Рассчитать</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
